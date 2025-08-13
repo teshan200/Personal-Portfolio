@@ -198,7 +198,7 @@ h3 {
     font-size: 19px;
 }
 
-.hero a {
+.hero a,.right a {
     border: 1px solid #4FC3F7;
     border-radius: 15px;
     padding: 10px 15px;
@@ -258,47 +258,70 @@ h3 {
     -webkit-text-fill-color: transparent;
 }
 
-.ab-cont{
+.ab-cont {
     display: flex;
     flex-wrap: wrap;
 }
 
-.box{
+.box {
     flex: 1;
     min-width: 50%;
     padding: 25px;
 }
 
-.box p{
+.box p {
     color: whitesmoke;
     text-align: justify;
     font-size: 19px;
 }
 
-.box li{
+.box li {
     font-size: 19px;
     color: whitesmoke;
 }
 
-.box ul{
+.box ul {
     margin: 25px 0;
+}
+
+.tech-icons{
+    margin: 25px 0;
+    font-size: 45px;
 }
 
 @media (max-width: 768px) {
     .about {
         padding: 5vh 2vh;
     }
-    .box{
+
+    .box {
         min-width: 100%;
+        padding-bottom: 0px;
     }
+
+    .box left{
+        padding-bottom: 0px;
+    }
+
+    .right{
+        padding-top: 0px;
+    }
+
     .about p {
         font-size: 14px;
     }
-    .box li{
-    font-size: 14px;
-    padding-top: 5px;
-    text-align: justify;
-}
+
+    .box li {
+        font-size: 14px;
+        padding-top: 5px;
+        text-align: justify;
+    }
+    .box h3{
+        text-align: center;
+    }
+    .right a{
+        margin: 0px auto;
+    }
 }
 
 /* about section end */
