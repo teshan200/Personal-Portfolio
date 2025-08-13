@@ -160,6 +160,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1vh 0;
 }
 
 .hero img {
@@ -168,18 +169,18 @@ a {
 }
 
 .hero h1 {
-    font-size: 63;
+    font-size: 63px;
     font-weight: 700;
 }
 
 .hero h3 {
-    font-size: 26;
+    font-size: 26px;
     font-weight: 600;
 }
 
 .hero h1,
 p,
-h3{
+h3 {
     color: whitesmoke;
     margin-top: 1vh;
 }
@@ -194,7 +195,7 @@ h3{
     padding-left: 20vw;
     padding-right: 20vw;
     text-align: center;
-    font-size: 19;
+    font-size: 19px;
 }
 
 .hero a {
@@ -211,13 +212,93 @@ h3{
         padding-top: 1vh;
         padding-bottom: 1vh;
     }
+
     .hero p {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    text-align: center;
-    font-size: 19;
-}
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
 }
 
 /* hero section end */
 /* ==================================================== */
+
+/* About section start */
+
+.about {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 15vh;
+}
+
+.about h1 {
+    color: whitesmoke;
+}
+
+.subhead {
+    font-size: 14px;
+    background: linear-gradient(to right, #4FC3F7, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ab-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    flex: 1;
+    min-width: 50%;
+    padding: 25px;
+}
+
+.box p{
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.box li{
+    font-size: 19px;
+    color: whitesmoke;
+}
+
+.box ul{
+    margin: 25px 0;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 5vh 2vh;
+    }
+    .box{
+        min-width: 100%;
+    }
+    .about p {
+        font-size: 14px;
+    }
+    .box li{
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: justify;
+}
+}
+
+/* about section end */
