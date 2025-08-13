@@ -198,7 +198,8 @@ h3 {
     font-size: 19px;
 }
 
-.hero a,.right a {
+.hero a,
+.right a {
     border: 1px solid #4FC3F7;
     border-radius: 15px;
     padding: 10px 15px;
@@ -247,7 +248,7 @@ h3 {
     padding: 5vh 15vh;
 }
 
-.about h1 {
+.about h1,.project h1 {
     color: whitesmoke;
 }
 
@@ -284,7 +285,7 @@ h3 {
     margin: 25px 0;
 }
 
-.tech-icons{
+.tech-icons {
     margin: 25px 0;
     font-size: 45px;
 }
@@ -299,11 +300,11 @@ h3 {
         padding-bottom: 0px;
     }
 
-    .box left{
+    .box left {
         padding-bottom: 0px;
     }
 
-    .right{
+    .right {
         padding-top: 0px;
     }
 
@@ -316,12 +317,27 @@ h3 {
         padding-top: 5px;
         text-align: justify;
     }
-    .box h3{
+
+    .box h3 {
         text-align: center;
-    }
-    .right a{
-        margin: 0px auto;
     }
 }
 
 /* about section end */
+
+/* Project Section Start */
+
+.project {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 15vh;
+}
+
+@media (max-width: 768px){
+
+}
+
+/* Project Section end */
