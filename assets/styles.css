@@ -1,21 +1,21 @@
 /* Global CSS Codes */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-
+/* ========================================== */
 /* Header Section CSS */
 
-.header{
+.header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,7 +23,7 @@ a{
     background-color: rgb(26, 26, 26);
 }
 
-.header ul li{
+.header ul li {
     list-style-type: none;
     display: inline;
     padding: 0px 25px;
@@ -37,27 +37,102 @@ a{
     padding-right: 0;
 }
 
-.header a{
+.header a {
     color: whitesmoke;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
 }
 
-.btn-header a{
+.btn-header a {
     border: 1px solid #4FC3F7;
     border-radius: 15px;
     padding: 10px 15px;
 }
 
-.logo-header a{
+.logo-header a {
     font-weight: 800;
     font-size: 25px;
 }
 
-.active{
-    color:#4FC3F7 !important;
+.active {
+    color: #4FC3F7 !important;
 }
 
-.menu-header{
+.menu-header {
     padding: 0px 15px;
 }
+
+.header .trigger {
+    color: whitesmoke;
+    font-size: 25px;
+    display: none;
+}
+
+/* Header Responsive */
+
+@media (max-width: 768px) {
+
+    .header .trigger {
+        display: block;
+    }
+
+    .menu-header {
+        display: none;
+    }
+
+    .btn-header {
+        display: none;
+    }
+
+    .header {
+        padding: 0 25px;
+    }
+
+    .logo-header {
+        margin: 0 auto;
+    }
+
+    .menu-header{
+        position: absolute;
+        display: flex;
+        margin-top: 30vh;
+        padding-top: 20px;
+        background-color: rgb(26, 26, 26);
+        width: 100vw;
+    }
+
+    .btn-header{
+        position: absolute;
+        display: flex;
+        margin-top: 65vh;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        background-color: rgb(26, 26, 26);
+        width: 100vw;
+    }
+
+    .header ul li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .header ul li {
+    list-style-type: none;
+    padding-top: 15px;
+}
+}
+
+@media (max-width: 425px) {
+    .logo-header a {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .header i {
+        font-size: 20px;
+    }
+}
+
+/* Header section Code end */
+/* ============================================== */
