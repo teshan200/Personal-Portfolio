@@ -17,7 +17,7 @@ a{
 
 .header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     min-height: 10vh;
     background-color: rgb(26, 26, 26);
@@ -27,6 +27,14 @@ a{
     list-style-type: none;
     display: inline;
     padding: 0px 25px;
+}
+
+.header ul li:first-child {
+    padding-left: 0;
+}
+
+.header ul li:last-child {
+    padding-right: 0;
 }
 
 .header a{
@@ -39,4 +47,17 @@ a{
     border: 1px solid #4FC3F7;
     border-radius: 15px;
     padding: 10px 15px;
+}
+
+.logo-header a{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.active{
+    color:#4FC3F7 !important;
+}
+
+.menu-header{
+    padding: 0px 15px;
 }
