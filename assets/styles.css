@@ -95,7 +95,7 @@ a {
     .menu-header{
         position: absolute;
         display: flex;
-        margin-top: 25vh;
+        margin-top: 30vh;
         padding-top: 20px;
         background-color: rgb(26, 26, 26);
         width: 100vw;
@@ -104,7 +104,7 @@ a {
     .btn-header{
         position: absolute;
         display: flex;
-        margin-top: 50vh;
+        margin-top: 65vh;
         padding-top: 20px;
         padding-left: 10px;
         padding-bottom: 20px;
