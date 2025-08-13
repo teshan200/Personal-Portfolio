@@ -1,5 +1,4 @@
 /* Global CSS Codes */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +13,13 @@ a {
 
 /* ========================================== */
 /* Header Section CSS */
-
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
     background-color: rgb(26, 26, 26);
+    position: relative;
 }
 
 .header ul li {
@@ -47,6 +46,7 @@ a {
     border: 1px solid #4FC3F7;
     border-radius: 15px;
     padding: 10px 15px;
+    color: whitesmoke;
 }
 
 .logo-header a {
@@ -66,10 +66,11 @@ a {
     color: whitesmoke;
     font-size: 25px;
     display: none;
+    cursor: pointer;
 }
 
+/* ========================================== */
 /* Header Responsive */
-
 @media (max-width: 768px) {
 
     .header .trigger {
@@ -78,11 +79,27 @@ a {
 
     .menu-header {
         display: none;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: rgb(26, 26, 26);
+        flex-direction: column;
+        padding: 20px 0;
     }
 
     .btn-header {
         display: none;
+        position: absolute;
+        top: calc(10vh + 200px);
+        left: 0;
+        width: 100%;
+        background-color: rgb(26, 26, 26);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
     }
+
 
     .header {
         padding: 0 25px;
@@ -92,35 +109,11 @@ a {
         margin: 0 auto;
     }
 
-    .menu-header{
-        position: absolute;
-        display: flex;
-        margin-top: 30vh;
-        padding-top: 20px;
-        background-color: rgb(26, 26, 26);
-        width: 100vw;
-    }
-
-    .btn-header{
-        position: absolute;
-        display: flex;
-        margin-top: 65vh;
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-bottom: 20px;
-        background-color: rgb(26, 26, 26);
-        width: 100vw;
-    }
-
     .header ul li {
         display: block;
-        margin: 0;
-        padding: 0;
+        padding: 15px 0;
+        text-align: center;
     }
-    .header ul li {
-    list-style-type: none;
-    padding-top: 15px;
-}
 }
 
 @media (max-width: 425px) {
@@ -134,5 +127,22 @@ a {
     }
 }
 
-/* Header section Code end */
+/* ============================================== */
+/* Mobile menu toggle animation */
+.menu-header,
+.btn-header {
+    transition: all 0.3s ease;
+}
+
+.menu-header.show {
+    display: flex !important;
+}
+
+.btn-header.show {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* ============================================== */
