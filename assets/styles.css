@@ -199,7 +199,7 @@ h3 {
 }
 
 .hero a,
-.right a {
+.right a,.project a {
     border: 1px solid #4FC3F7;
     border-radius: 15px;
     padding: 10px 15px;
@@ -248,7 +248,8 @@ h3 {
     padding: 5vh 15vh;
 }
 
-.about h1,.project h1 {
+.about h1,
+.project h1 {
     color: whitesmoke;
 }
 
@@ -336,8 +337,55 @@ h3 {
     padding: 5vh 15vh;
 }
 
-@media (max-width: 768px){
+.pro-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 5vh 0;
+}
 
+.pro-cards .card {
+    background-color: #2e2e2e;
+    border: 1px solid #4FC3F7;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    min-width: 250px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card-img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    width: 100%;
+}
+
+.card-content h3 {
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.card-content p {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .pro-cards .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .project {
+        padding: 5vh 2vh;
+    }
 }
 
 /* Project Section end */
