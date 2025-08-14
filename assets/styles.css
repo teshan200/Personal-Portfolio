@@ -199,7 +199,8 @@ h3 {
 }
 
 .hero a,
-.right a,.project a {
+.right a,
+.project a {
     border: 1px solid #4FC3F7;
     border-radius: 15px;
     padding: 10px 15px;
@@ -389,3 +390,65 @@ h3 {
 }
 
 /* Project Section end */
+
+/* footer start */
+.footer {
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-top: 2px solid whitesmoke;
+    padding: 25px 50px;
+}
+
+.f-sec-1 {
+    flex: 0 0 30%;
+    padding: 10px;
+}
+
+.f-sec-2 {
+    flex: 0 0 60%;
+    padding: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    align-items: center;
+    justify-content: end;
+}
+
+.f-sec-2 i {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+@media (max-width: 992px) {
+
+    .f-sec-1,
+    .f-sec-2 {
+        flex: 0 0 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f-sec-2 {
+        gap: 10px 15px;
+    }
+
+    .f-sec-2 i {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 20px 15px;
+        gap: 8px;
+    }
+
+    .f-sec-2 i {
+        font-size: 20px;
+    }
+}
+
+/* footer end */
