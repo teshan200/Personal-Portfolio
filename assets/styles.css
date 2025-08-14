@@ -152,10 +152,10 @@ a {
 .hero {
     min-height: 90vh;
     background-color: rgb(26, 26, 26);
-    background-image: url(./img/hero-bg.png);
+    background-image: url(./img/bg2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1025px 764px;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +210,7 @@ h3 {
 
 @media (max-width: 768px) {
     .hero {
-        background-size: 339px 564px;
+        /* background-size: 339px 564px; */
         padding-top: 1vh;
         padding-bottom: 1vh;
     }
@@ -330,7 +330,7 @@ h3 {
 /* Project Section Start */
 
 .project {
-    background-color: rgb(26, 26, 26);
+    background-color: #202020;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,3 +452,50 @@ h3 {
 }
 
 /* footer end */
+
+/* hero 2 start */
+.hero2 {
+    height: 25vh;
+    background-image: url(./img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero2 h1 {
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+/* hero 2 end */
+
+/* blog section start */
+.post-cont {
+    background-color: #202020;
+}
+
+.btn-read {
+    padding: 10px 20px;
+    background-color: #3B82F6;
+    color: whitesmoke;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 15px auto;
+}
+
+.btn-read:hover {
+    background-color: #2D9CDB;
+    transform: translateY(-2px);
+}
+
+.btn-read:active {
+    background-color: #1A1A1A;
+    transform: translateY(0);
+}
